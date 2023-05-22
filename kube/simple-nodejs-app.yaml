@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: simple-nodejs-app
-        image: simple-nodejs-app
+        image: localhost:5000/simple-nodejs-app
         ports:
         - containerPort: 3000
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
